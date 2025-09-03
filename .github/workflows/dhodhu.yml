@@ -1,0 +1,10 @@
+name: terraform-pipeline
+on:
+  workflow_dispatch
+
+jobs:
+  terraform-job:
+    runs-on: self-hosted-runner
+    steps:
+      - name: checkout
+        uses: actions/checkout@5.0.0
